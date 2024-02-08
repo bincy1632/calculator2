@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+ 
+        <div class="container">
+        <div class="calculator">
+           <input id="display" value="" type="textbox" />
+        </div>
+        <div>
+            <button onclick="checkResult()" class="operator">=</button>
+            <button onclick="clearDisplay()"class="operator">AC</button>
+            <button onclick="operations('/')"class="operator">/</button>
+            <button onclick="addtoDisplay('.')"class="operator" >.</button>
+        </div>
+           <div>
+             <button onclick="addtoDisplay(7)">7</button>
+             <button onclick="addtoDisplay(8)">8</button>
+             <button onclick="addtoDisplay(9)">9</button>
+             <button onclick="operations('*')"class="operator">*</button>
+            </div>
+            <div>
+                <button onclick="addtoDisplay(4)">4</button>
+                <button onclick="addtoDisplay(5)">5</button>
+                <button onclick="addtoDisplay(6)">6</button>
+                <button onclick="operations('-')"class="operator">-</button>
+
+            </div>
+       
+          <div>
+           <button onclick="addtoDisplay(1)">1</button>
+           <button onclick="addtoDisplay(2)">2</button>
+           <button onclick="addtoDisplay(3)">3</button>
+           <button onclick="operations('+')"class="operator">+</button>
+         </div>
+         <div>
+            <button onclick="addtoDisplay(0)">0</button> 
+            <button onclick="addtoDisplay('00')">00</button>
+            <button onclick="checkResult()" class="equalBtn" >=</button>
+           
+        </div>
+    
+     
+
+        
+      </div>
+
+  </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
